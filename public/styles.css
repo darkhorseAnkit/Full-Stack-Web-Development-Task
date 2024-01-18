@@ -1,0 +1,113 @@
+body {
+            animation: theme 21s linear infinite;
+            
+            &:after,
+            &:before {
+                content: '';
+                display: block;
+                position: fixed;
+                z-index: -1;
+                top: 0;
+                width: 100vw;
+                height: 100vh;
+                width: 100vmax;
+                height: 100vmax;
+                background: rgba(0,0,0,0.05);
+                animation: background 90s linear infinite;
+            }
+        
+            &:after {
+                left: 15vw;
+            }
+        
+            &:before {
+                right: 15vw;
+                animation-delay: -30s;
+                animation-direction: reverse;
+            }
+        }
+        
+        @keyframes theme {
+            0% {
+                background: #74C390;
+            }
+            
+            16% {
+                background: #5DBDB6;
+            }
+            
+            33% {
+                background: #59D4E1;
+            }
+            
+            50% {
+                background: #51BCE8;
+            }
+            
+            66% {
+                background: #FA5374;
+            }    
+            
+            83% {
+                background: #E46653;
+            }
+        
+            100% {
+                background: #74C390;
+            }
+        }
+        
+        @keyframes background {
+            0% {
+                transform: rotate(0deg);
+            }
+            
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 400px; 
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        label {
+            margin-bottom: 8px;
+        }
+        
+        input {
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        button {
+            padding: 12px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
